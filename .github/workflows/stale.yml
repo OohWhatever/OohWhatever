@@ -2,22 +2,39 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # Это cron выражение запускает workflow каждый час
+  push:
+    branches:
+      - main  # Выполнение при каждом push на ветку main
+  workflow_dispatch:  # Позволяет запускать workflow вручную
 
 jobs:
-  update:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Get SVG image from API
-        id: get_svg
-        run: |
-          SVG=$(curl -s -H "Authorization: Bearer ${{ secrets.README_WORKFLOW }}" https://stdstatistics.onrender.com/generate-svg?username=whatever)
-          echo "::set-output name=svg::$SVG"
+    - name: Fetch SVG from API
+      run: curl -o svg_image.svg "YOUR_API_URL_HERE"
 
-      - name: Update README.md
-        run: |
-          echo "$(steps.get_svg.outputs.svg)" > README.md
+    - name: Commit new SVG
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        mv svg_image.svg path/to/svg_image.svg
+        git add path/to/svg_image.svg
+        git commit -m 'Update SVG image'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
+
+    - name: Update README
+      run: |
+        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](path/to/svg_image.svg)|' README.md
+        git add README.md
+        git commit -m 'Update README with new SVG'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
