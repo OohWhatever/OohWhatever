@@ -1,5 +1,5 @@
 ### Hi there 👋
-![Anurag's GitHub stats](https://stdstatistics.onrender.com/generate-svg?username=whatever)
+![Anurag's GitHub statss](https://stdstatistics.onrender.com/generate-svg?username=whatever)
 <!--
 **OohWhatever/OohWhatever** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
