@@ -23,7 +23,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        mv svg_image.svg img/data.svg
+        mv data.svg img/data.svg
         git add img/data.svg
         git commit -m 'Update SVG image'
         git push
