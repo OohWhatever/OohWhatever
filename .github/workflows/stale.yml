@@ -42,6 +42,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
 
     - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
       env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
+      run: |
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+        git push origin HEAD:main
