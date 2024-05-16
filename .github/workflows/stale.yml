@@ -17,13 +17,13 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Fetch SVG from API
-      run: curl -o svg_image.svg "YOUR_API_URL_HERE"
+      run: curl -o data.svg "https://stdstatistics.onrender.com/generate-svg?username=whatever"
 
     - name: Commit new SVG
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        mv svg_image.svg path/to/svg_image.svg
+        mv svg_image.svg img/data.svg
         git add path/to/svg_image.svg
         git commit -m 'Update SVG image'
         git push
