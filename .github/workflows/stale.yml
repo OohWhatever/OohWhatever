@@ -43,5 +43,5 @@ jobs:
 
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
-      with:
+      env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
