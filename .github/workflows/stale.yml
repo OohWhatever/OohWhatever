@@ -32,7 +32,7 @@ jobs:
 
     - name: Update README
       run: |
-        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](path/to/svg_image.svg)|' README.md
+        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](img/data.svg)|' README.md
         git add README.md
         git commit -m 'Update README with new SVG'
         git push
