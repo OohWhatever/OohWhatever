@@ -1,30 +1,23 @@
-name: Update SVG in README.md
+name: Update README
 
 on:
   schedule:
-    - cron:  '0 * * * *' 
+    - cron: '0 * * * *'
 
 jobs:
-  update-svg:
+  update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Get SVG from API
+      - name: Get SVG image from API
         id: get_svg
         run: |
-          SVG=$(curl -s https://stdstatistics.onrender.com/generate-svg?username=whatever)
+          SVG=$(curl -s -H "Authorization: Bearer ${{ secrets.README_WORKFLOW }}" https://stdstatistics.onrender.com/generate-svg?username=whatever)
           echo "::set-output name=svg::$SVG"
 
       - name: Update README.md
         run: |
-          echo "$(echo $SVG | sed 's/&/\&amp;/g' | sed 's/</\&lt;/g' | sed 's/>/\&gt;/g')" > README.md
-          git config --local user.email "whatever@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Update SVG in README.md"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.README_WORKFLOW}}
+          echo "$(steps.get_svg.outputs.svg)" > README.md
