@@ -24,7 +24,7 @@ Here is the dynamic SVG image that updates every hour:
 - Installation
 - Usage
 - etc.
-
+![Dynamic SVG](img/data.svg)
 
 
 
