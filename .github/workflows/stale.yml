@@ -1,3 +1,4 @@
+
 name: Update README
 
 on:
@@ -18,31 +19,25 @@ jobs:
 
     - name: Fetch SVG from API
       run: |
-        temp_filename=$(mktemp).csv
-        mkdir -p img
-        img_dir=$(realpath img)
-        curl -o ${temp_filename} "https://stdstatistics.onrender.com/generate-svg?username=whatever"
+        curl -o data.svg "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        mv ${temp_filename} img/${temp_filename}
-        
+        mv data.svg img/data.svg
         
     - name: Display directory contents for debugging
       run: ls -R
    
     - name: Commit new SVG
       run: |
-        git add img/${temp_filename}
+        git add img/data.svg
         git diff-index --quiet HEAD || git commit -m 'Update SVG image'
       env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
 
     - name: Update README
       run: |
-        img_path="img/${temp_filename}"
-        readme_path="README.md"
-        sed -i.bak "s|!\[Dynamic SVG Image\]\(.*\)|![Dynamic SVG Image](${img_path})|" ${readme_path}
-        git add ${readme_path}
+        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](img/data.svg)|' README.md
+        git add README.md
         git diff-index --quiet HEAD || git commit -m 'Update README with new SVG'
       env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
