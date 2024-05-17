@@ -20,7 +20,7 @@ Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
 ![Dynamic SVG Image](img/data.svg)
 
-Project repo (MAN will be later):
+Project repo (MANual will be later):
 
 https://github.com/OohWhatever/STDstatistics
 
