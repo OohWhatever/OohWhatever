@@ -14,24 +14,18 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# My Project
+# My Pet Project: Standoff365 cyberrange rating
 
-Here is the dynamic SVG image that updates every hour:
+Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
 ![Dynamic SVG Image](img/data.svg)
 
 
-[![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
-## Other Sections of Your README
-- Description
-- Installation
-- Usage
-- etc.
+Github Actions workflow status: [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
-
-
+# Statisstics:
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OohWhatever&show_icons=true&theme=radical)
 
