@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# My Pet Project: Standoff365 cyberrange rating badge
+# Project: Standoff365 cyberrange rating badge
 
 Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
