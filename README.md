@@ -29,6 +29,5 @@ Github Actions workflow status:
 [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
-# Statistics:
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OohWhatever&show_icons=true&theme=radical)
-
+# Some Badges:
+![](https://komarev.com/ghpvc/?username=your-github-username)
