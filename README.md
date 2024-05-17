@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 # Project: Standoff365 cyberrange rating badge
 
-Here is the dynamic SVG image that updates every hour by GitHub Actions:
+Here is the dynamic SVG image that updates every hour by GitHub Actions with new timestamp:
 
 ![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=1715965726)
 
