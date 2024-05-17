@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
-![Dynamic SVG Image](asd.sad.svg)
+![Dynamic SVG Image]()
 
 Project repo:
 
