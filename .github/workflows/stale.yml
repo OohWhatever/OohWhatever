@@ -24,7 +24,7 @@ jobs:
         curl -o ${temp_filename} "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        mv ${temp_filename} ${img_dir}/
+        
         
     - name: Display directory contents for debugging
       run: ls -R
@@ -38,9 +38,11 @@ jobs:
 
     - name: Update README
       run: |
+        mv ${temp_filename} img/${temp_filename}
+        img_path="img/${temp_filename}"
         readme_path="README.md"
         sed -i.bak "s|!\[Dynamic SVG Image\]\(.*\)|![Dynamic SVG Image](${img_path})|" ${readme_path}
-        git add README.md
+        git add ${readme_path}
         git diff-index --quiet HEAD || git commit -m 'Update README with new SVG'
       env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
