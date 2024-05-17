@@ -24,6 +24,7 @@ jobs:
         curl -o ${temp_filename} "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        mv ${temp_filename} img/${temp_filename}
         
         
     - name: Display directory contents for debugging
@@ -38,7 +39,6 @@ jobs:
 
     - name: Update README
       run: |
-        mv ${temp_filename} img/${temp_filename}
         img_path="img/${temp_filename}"
         readme_path="README.md"
         sed -i.bak "s|!\[Dynamic SVG Image\]\(.*\)|![Dynamic SVG Image](${img_path})|" ${readme_path}
