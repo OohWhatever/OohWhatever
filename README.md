@@ -19,6 +19,8 @@ Here are some ideas to get you started:
 Here is the dynamic SVG image that updates every hour:
 
 ![Dynamic SVG Image](img/data.svg)
+
+
 [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
