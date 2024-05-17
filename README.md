@@ -18,13 +18,15 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour:
 
+![Dynamic SVG](img/data.svg)
+
 
 ## Other Sections of Your README
 - Description
 - Installation
 - Usage
 - etc.
-![Dynamic SVG](img/data.svg)
+
 
 
 
