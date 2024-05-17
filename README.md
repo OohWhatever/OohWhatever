@@ -32,4 +32,4 @@ Github Actions workflow status:
 # Some Badges:
 ![](https://komarev.com/ghpvc/?username=OohWhatever)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=OohWhatever&theme=blue-green)
+
