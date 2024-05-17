@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour:
 
-![Dynamic SVG](img/data.svg)
+![Dynamic](img/data.svg)
 
 
 ## Other Sections of Your README
