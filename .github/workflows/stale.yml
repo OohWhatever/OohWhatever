@@ -19,6 +19,7 @@ jobs:
     - name: Fetch SVG from API
       run: |
         temp_filename=$(mktemp).csv
+        mkdir -p img
         curl -o ${temp_filename} "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
