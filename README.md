@@ -18,7 +18,6 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour:
 
-![Dynamic](/img/data.svg)
 ![Dynamic SVG Image](/img/data.svg)
 
 
