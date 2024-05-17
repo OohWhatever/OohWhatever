@@ -26,6 +26,6 @@ Here is the dynamic SVG image that updates every hour by GitHub Actions:
 Github Actions workflow status: [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
-# Statisstics:
+# Statistics:
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OohWhatever&show_icons=true&theme=radical)
 
