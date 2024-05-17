@@ -35,8 +35,7 @@ jobs:
 
     - name: Update README
       run: |
-        TIMESTAMP=$(date +%s)
-        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=$TIMESTAMP)|' README.md
+        sed -i.bak 's|!\[Dynamic SVG Image\](.*)|![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true)|' README.md
         git add README.md
         git diff-index --quiet HEAD || git commit -m 'Update README with new SVG'
       env:
