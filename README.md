@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
-![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=initial)timestamp=1715965726)
+![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=initial)timestamp=1715965726)timestamp=1715965938)
 
 Project repo (MANual will be later):
 
