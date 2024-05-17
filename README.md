@@ -20,8 +20,9 @@ Here is the dynamic SVG image that updates every hour by GitHub Actions:
 
 ![Dynamic SVG Image](img/data.svg)
 
+Project repo:
 
-
+https://github.com/OohWhatever/STDstatistics
 
 Github Actions workflow status: [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
