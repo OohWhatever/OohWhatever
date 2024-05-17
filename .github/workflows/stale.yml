@@ -23,7 +23,7 @@ jobs:
         curl -o ${temp_filename} "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        mv ${temp_filename} img/${temp_filename}
+        mv -C . ${temp_filename} img/
         
     - name: Display directory contents for debugging
       run: ls -R
