@@ -25,12 +25,11 @@ Project repo (MANual will be later):
 
 https://github.com/OohWhatever/STDstatistics
 
-Github Actions workflow status: 
 
-[![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
+
 
 
 # Some Badges:
-![](https://komarev.com/ghpvc/?username=OohWhatever)
+![](https://komarev.com/ghpvc/?username=OohWhatever) [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
