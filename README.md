@@ -18,7 +18,6 @@ Here are some ideas to get you started:
 
 Here is the dynamic SVG image that updates every hour:
 
-![Dynamic SVG Image](img/data.svg)
 
 ## Other Sections of Your README
 - Description
@@ -26,7 +25,7 @@ Here is the dynamic SVG image that updates every hour:
 - Usage
 - etc.
 
-[![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
+
 
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OohWhatever&show_icons=true&theme=radical)
