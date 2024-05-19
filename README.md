@@ -21,7 +21,7 @@ Here is the dynamic SVG image that updates every hour by GitHub Actions with new
 ![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=1715965726)
 
 
-Project repo (MANual will be later):
+Project repo and how to install:
 
 https://github.com/OohWhatever/STDstatistics
 
