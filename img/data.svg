@@ -1,5 +1,36 @@
-<!doctype html>
-<html lang=en>
-<title>500 Internal Server Error</title>
-<h1>Internal Server Error</h1>
-<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+   <svg xmlns="http://www.w3.org/2000/svg" width="470" height="180">
+  <rect x="0" y="0" width="470" height="180" rx="20" ry="20" fill="url(#MyGradient)" />
+
+    <text x="30" y="40" fill="white" font-size="25" font-weight="bold" font-family="Arial">
+    STANDOFF365 metrics
+  </text>
+    
+  <text x="30" y="80" fill="white" font-size="13" font-weight="bold" font-family="Arial">
+    Username: </text>
+   <text x="110" y="80" fill="#00ff33" font-size="13" font-weight="bold" font-family="Arial">
+    whatever</text>
+  <text x="75%" y="80" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="17" font-weight="bold" font-family="Arial">
+    CYBERRANGE RATING </text>
+   <text x="75%" y="73%" dominant-baseline="middle" text-anchor="middle" fill="#ff0000" font-size="70" font-weight="bold" font-family="Arial">
+    55</text>
+  <text x="30" y="102" fill="white" font-size="13" font-weight="bold" font-family="Arial">
+    Vuln score: </text>
+   <text x="110" y="102" fill="#00ff33" font-size="13" font-weight="bold" font-family="Arial">
+    600</text>
+   <text x="30" y="155" fill="white" font-size="13" font-weight="bold" font-family="Arial">
+    Bug Bounty score: </text>
+   <text x="150" y="155" fill="#66ffff" font-size="13" font-weight="bold" font-family="Arial">
+    0</text>
+   <text x="30" y="125" fill="white" font-size="13" font-weight="bold" font-family="Arial">
+    Buisness Risc score: </text>
+   <text x="170" y="125" fill="#00ff33" font-size="13" font-weight="bold" font-family="Arial">
+    53100</text>
+<defs>
+        <linearGradient id="MyGradient">
+          <stop offset="5%" stop-color="#660033" />
+          <stop offset="95%" stop-color="#0e1231" />
+        </linearGradient>
+      </defs>
+</svg>
+    
