@@ -19,10 +19,12 @@ jobs:
     - name: Fetch SVG from API
       run: |
         curl -o data.svg "https://stdstatistics.onrender.com/generate-svg?username=whatever"
+        curl -o bbdata.svg "https://stdstatistics.onrender.com/generatebb-svg?username=whatever"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
         mv data.svg img/data.svg
+        mv bbdata.svg img/bbdata.svg
 
     - name: Display directory contents for debugging
       run: ls -R
@@ -31,6 +33,7 @@ jobs:
       run: |
         git pull
         git add img/data.svg
+        git add img/bbdata.svg
         git diff-index --quiet HEAD || git commit -m 'Update SVG image'
       env:
         GITHUB_TOKEN: ${{ secrets.README_WORKFLOW }}
@@ -39,6 +42,7 @@ jobs:
       run: |
         TIMESTAMP=$(date +%s)
         sed -i.bak "s|!\[Dynamic SVG Image\](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true).*|![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=${TIMESTAMP})|" README.md
+        sed -i.bak "s|!\[Dynamic BBSVG Image\](https://github.com/OohWhatever/OohWhatever/blob/main/img/bbdata.svg?raw=true).*|![Dynamic BBSVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/bbdata.svg?raw=true&timestamp=${TIMESTAMP})|" README.md
         git add README.md
         git diff-index --quiet HEAD || git commit -m 'Update README with new SVG'
       env:
