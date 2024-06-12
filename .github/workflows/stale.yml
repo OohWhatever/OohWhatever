@@ -18,6 +18,7 @@ jobs:
 
     - name: Fetch SVG from API
       run: |
+        git pull
         curl -o data.svg "https://stdstatistics.onrender.com/generate-svg?username=whatever"
         curl -o bbdata.svg "https://stdstatistics.onrender.com/generatebb-svg?username=null3d"
         git config --global user.name 'github-actions[bot]'
@@ -31,7 +32,6 @@ jobs:
 
     - name: Commit new SVG
       run: |
-        git pull
         git add img/data.svg
         git add img/bbdata.svg
         git diff-index --quiet HEAD || git commit -m 'Update SVG image'
