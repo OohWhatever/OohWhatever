@@ -19,7 +19,7 @@ jobs:
     - name: Fetch SVG from API
       run: |
         curl -o data.svg "https://stdstatistics.onrender.com/generate-svg?username=whatever"
-        curl -o bbdata.svg "https://stdstatistics.onrender.com/generatebb-svg?username=bratka"
+        curl -o bbdata.svg "https://stdstatistics.onrender.com/generatebb-svg?username=null3d"
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
