@@ -20,6 +20,10 @@ Here is the dynamic SVG image that updates every hour by GitHub Actions with new
 
 ![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/data.svg?raw=true&timestamp=1715965726)
 
+Another badge template that shows your Standoff BugBounty metrics:
+
+![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/bbdata.svg?raw=true&timestamp=1715965726)
+
 
 Project repo and how to install:
 
