@@ -33,7 +33,7 @@ https://github.com/OohWhatever/STDstatistics
 
 
 
-# Some Badges:
+
 ![](https://komarev.com/ghpvc/?username=OohWhatever) [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
 
