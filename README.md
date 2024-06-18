@@ -30,11 +30,14 @@ Project repo and how to install:
 https://github.com/OohWhatever/STDstatistics
 
 
-# My habr.com articles:
+
+## My habr.com articles:
 
 https://habr.com/ru/articles/822563/
 
 
+
+----------------------------------
 
 ![](https://komarev.com/ghpvc/?username=OohWhatever) [![Update README](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml/badge.svg)](https://github.com/OohWhatever/OohWhatever/actions/workflows/stale.yml)
 
