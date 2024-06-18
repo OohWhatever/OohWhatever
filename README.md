@@ -30,7 +30,9 @@ Project repo and how to install:
 https://github.com/OohWhatever/STDstatistics
 
 
+# My habr.com articles:
 
+https://habr.com/ru/articles/822563/
 
 
 
