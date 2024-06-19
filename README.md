@@ -1,5 +1,4 @@
-### Hi there 👋
-
+###  👋 Hi there
 <!--
 **OohWhatever/OohWhatever** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -31,10 +30,9 @@ https://github.com/OohWhatever/STDstatistics
 
 
 
-## My habr.com articles:
+##  🔭 My habr.com articles  :
 
-https://habr.com/ru/articles/822563/
-
+[Опыт создания homelab на minisforum](https://habr.com/ru/articles/822563/).
 
 
 ----------------------------------
