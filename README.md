@@ -24,9 +24,10 @@ Another badge template that shows your Standoff BugBounty metrics:
 ![Dynamic SVG Image](https://github.com/OohWhatever/OohWhatever/blob/main/img/bbdata.svg?raw=true&timestamp=1715965726)
 
 
-Project repo and how to install:
-
-https://github.com/OohWhatever/STDstatistics
+| Description | Link |
+| --- | --- |
+| Project repo and how to install | https://github.com/OohWhatever/STDstatistics |
+| Project site | https://stdstatistics.onrender.com/ |
 
 
 
