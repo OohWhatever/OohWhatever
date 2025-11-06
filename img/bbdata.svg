@@ -1,7 +1,11 @@
-<html>
-<head><title>502 Bad Gateway</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Service Unhealthy</title>
+</head>
 <body>
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>cloudflare</center>
+This service is not ready to serve traffic. If you are the site owner, please check that your service is passing health checks.
 </body>
 </html>
